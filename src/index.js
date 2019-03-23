@@ -10,7 +10,7 @@ renderNotes();
 document.querySelector("#create-note-button").addEventListener('click', function(event) {
     console.log("pushed create note button. Inside of listener..");
     let noteID = createNote();
-    //location.assign("/edit.html#" + noteID);
+    location.assign("/edit.html#" + noteID);
 })
 
 document.querySelector('#filter-notes').addEventListener('input', function(event) {
